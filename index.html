@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Practice</title>
+</head>
+<body>
+    <section class="coming-soon">
+        <div>
+            <h2>When should you expect to die?</h2>
+            <form action='results.html' method="GET">
+                <fieldset>
+                    <legend>Calculate Your Death Day</legend>
+                    <h3>When were you born?</h3>
+                    <input 
+                        type="date" 
+                        id='birthDay' 
+                        name='birthday'
+                        value='2021-06-14'
+                    >
+                    <h3>Are you a man or woman?</h3>
+                    <input 
+                        type="radio" 
+                        id="male" 
+                        name='gender' 
+                        value='male' 
+                        for='male'
+                    >
+                    <label for='male'>Male</label>
+                    <input 
+                        type="radio" 
+                        id='female' 
+                        name='gender' 
+                        value='female' 
+                        for='female'
+                    >
+                    <label for='female'>Female</label>
+                    <h3>Do you smoke?</h3>
+                    <input 
+                        type="radio" 
+                        id="smoker" 
+                        name='smokes' 
+                        value='true' 
+                        for='smoker'
+                    >
+                    <label for='smoker'>Yes</label>
+                    <input 
+                        type='radio' 
+                        id='nonsmoker' 
+                        name='smokes' 
+                        value='false' 
+                        for='nonsmoker'
+                    >
+                    <label for='nonsmoker'>No</label>
+                    </br>
+                    <input type='submit' value="Submit">
+                    <input type='reset' value="Reset">
+
+                </fieldset>
+            </form>
+            <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">Time</h3>
+                    <h3>Day</h3>
+                </div>
+                <div class="container-hour">
+                    <h3 class="hour">Time</h3>
+                    <h3>Hour</h3>
+                </div>
+                <div class="container-minute">
+                    <h3 class="minute">Time</h3>
+                    <h3>Minute</h3>
+                </div>
+                <div class="container-second">
+                    <h3 class="second">Time</h3>
+                    <h3>Second</h3>
+                </div>
+
+            </div>
+        </div>
+        <img class="clock" src="https://images-na.ssl-images-amazon.com/images/I/81os6R4wnNL._AC_SL1500_.jpg" alt="clock" />
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
